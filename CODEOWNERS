@@ -5,13 +5,13 @@
 # the repo. Unless a later match takes precedence,
 # @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
-*       @kbellotto
+*       @kbellotto @rcasagrande
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
 # modifies JS files, only @js-owner and not the global
 # owner(s) will be requested for a review.
-*.js    @kbellotto #This is an inline comment.
+*.js    @kbellotto @rcasagrande #This is an inline comment.
 
 # You can also use email addresses if you prefer. They'll be
 # used to look up users just like we do for commit author
@@ -23,7 +23,7 @@
 # In this example, @doctocat owns any files in the build/logs
 # directory at the root of the repository and any of its
 # subdirectories.
-/build/logs/ @kbellotto
+/build/logs/ @kbellotto @rcasagrande
 
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
@@ -32,24 +32,24 @@ docs/*  karin.beloto@hotmail.com
 
 # In this example, @octocat owns any file in an apps directory
 # anywhere in your repository.
-apps/ @kbellotto
+apps/ @kbellotto @rcasagrande
 
 # In this example, @doctocat owns any file in the `/docs`
 # directory in the root of your repository and any of its
 # subdirectories.
-/docs/ @kbellotto
+/docs/ @kbellotto @rcasagrande
 
 # In this example, any change inside the `/scripts` directory
 # will require approval from @doctocat or @octocat.
-/scripts/ @kbellotto @kbellotto
+/scripts/ @kbellotto @kbellotto @rcasagrande
 
 # In this example, @octocat owns any file in a `/logs` directory such as
 # `/build/logs`, `/scripts/logs`, and `/deeply/nested/logs`. Any changes
 # in a `/logs` directory will require approval from @octocat.
-**/logs @kbellotto
+**/logs @kbellotto @rcasagrande
 
 # In this example, @octocat owns any file in the `/apps`
 # directory in the root of your repository except for the `/apps/github`
 # subdirectory, as its owners are left empty.
-/apps/ @kbellotto
+/apps/ @kbellotto @rcasagrande
 /apps/github
