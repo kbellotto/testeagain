@@ -51,5 +51,5 @@ apps/ @kbellotto
 # In this example, @octocat owns any file in the `/apps`
 # directory in the root of your repository except for the `/apps/github`
 # subdirectory, as its owners are left empty.
-/apps/ @kbellotto @kbellotto2
+/apps/ @kbellotto
 /apps/github
